@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgrounds_alphabet"
+    tools:context=".Alphabet">
+
+    <ImageView android:id="@+id/settings"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:onClick="toSettings"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/radioGroup"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.885"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.090"
+        app:srcCompat="@drawable/settings" />
+
+    <RadioGroup android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView android:id="@+id/z"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:onClick="takeOnA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.614"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.784"
+        app:srcCompat="@drawable/zz" />
+
+    <ImageView android:id="@+id/y"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:onClick="takeOnA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.385"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.795"
+        app:srcCompat="@drawable/y" />
+
+    <ImageView android:id="@+id/x"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:onClick="takeOnA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.834"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.683"
+        app:srcCompat="@drawable/xx" />
+
+    <ImageView android:id="@+id/w"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:onClick="takeOnA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.637"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.706"
+        app:srcCompat="@drawable/ww" />
+
+    <ImageView android:id="@+id/v"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:onClick="takeOnA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.397"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.706"
+        app:srcCompat="@drawable/vv" />
+
+    <ImageView android:id="@+id/u"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:onClick="takeOnA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.683"
+        app:srcCompat="@drawable/u" />
+
+    <ImageView android:id="@+id/t"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:onClick="takeOnA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.895"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.597"
+        app:srcCompat="@drawable/tt" />
+
+    <ImageView android:id="@+id/s"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:onClick="takeOnA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.695"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.606"
+        app:srcCompat="@drawable/ss" />
+
+    <ImageView android:id="@+id/r"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:onClick="takeOnA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.618"
+        app:srcCompat="@drawable/rr" />
+
+    <ImageView android:id="@+id/q"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:onClick="takeOnA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.336"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.606"
+        app:srcCompat="@drawable/qq" />
+
+    <ImageView android:id="@+id/p"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:onClick="takeOnA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.133"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.587"
+        app:srcCompat="@drawable/pp" />
+
+    <ImageView android:id="@+id/o"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:onClick="takeOnO"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.872"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499"
+        app:srcCompat="@drawable/o" />
+
+    <ImageView android:id="@+id/n"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:onClick="takeOnA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.695"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.511"
+        app:srcCompat="@drawable/nn" />
+
+    <ImageView android:id="@+id/m"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:onClick="takeOnA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.511"
+        app:srcCompat="@drawable/mm" />
+
+    <ImageView android:id="@+id/l"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:onClick="takeOnA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.292"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.511"
+        app:srcCompat="@drawable/ll" />
+
+    <ImageView android:id="@+id/k"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:onClick="takeOnA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499"
+        app:srcCompat="@drawable/kk" />
+
+    <ImageView android:id="@+id/j"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:onClick="takeOnA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.872"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.389"
+        app:srcCompat="@drawable/jj" />
+
+    <ImageView android:id="@+id/i"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:onClick="takeOnA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.695"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.415"
+        app:srcCompat="@drawable/i" />
+
+    <ImageView android:id="@+id/h"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:onClick="takeOnA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.415"
+        app:srcCompat="@drawable/hh" />
+
+    <ImageView android:id="@+id/g"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:onClick="takeOnA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.313"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.401"
+        app:srcCompat="@drawable/gg" />
+
+    <ImageView android:id="@+id/f"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:onClick="takeOnA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.133"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.401"
+        app:srcCompat="@drawable/ff" />
+
+    <ImageView android:id="@+id/e"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:onClick="takeOnE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.872"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.297"
+        app:srcCompat="@drawable/e" />
+
+    <ImageView android:id="@+id/d"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:onClick="takeOnA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.695"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.314"
+        app:srcCompat="@drawable/dd" />
+
+    <ImageView android:id="@+id/c"
+        android:layout_width="34dp"
+        android:layout_height="44dp"
+        android:onClick="takeOnA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.314"
+        app:srcCompat="@drawable/cc" />
+
+    <RadioButton android:id="@+id/b"
+        android:layout_width="34dp"
+        android:layout_height="44dp"
+        android:background="@drawable/bb"
+        android:button="@drawable/space"
+        android:onClick="takeOnB"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.336"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.314" />
+
+    <RadioButton android:id="@+id/a"
+        android:layout_width="34dp"
+        android:layout_height="44dp"
+        android:background="@drawable/a"
+        android:button="@drawable/space"
+        android:onClick="takeOnA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.128"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.299" />
+
+    <ImageView android:id="@+id/dom"
+        android:layout_width="122dp"
+        android:layout_height="121dp"
+        android:onClick="takeOnA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.939"
+        app:srcCompat="@drawable/dom" />
+
+    <ImageView android:id="@+id/know"
+        android:layout_width="185dp"
+        android:layout_height="59dp"
+        android:onClick="know"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.889"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.91"
+        app:srcCompat="@drawable/know"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <!--<TableLayout android:layout_width="240dp"
+        android:layout_height="483dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.847">
+
+        <TableRow android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView android:id="@+id/h"
+                android:layout_width="dp"
+                android:layout_height="48dp"
+                android:onClick="takeOnLetter"
+                app:srcCompat="@drawable/aa" />
+
+            <ImageView android:id="@+id/h"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:onClick="takeOnLetter"
+                app:srcCompat="@drawable/bb" />
+
+            <ImageView android:id="@+id/h"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:onClick="takeOnLetter"
+                app:srcCompat="@drawable/cc" />
+
+            <ImageView android:id="@+id/h"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:onClick="takeOnLetter"
+                app:srcCompat="@drawable/dd" />
+
+            <ImageView android:id="@+id/h"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:onClick="takeOnLetter"
+                app:srcCompat="@drawable/ee" />
+        </TableRow>
+
+        <TableRow android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView android:id="@+id/h"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:onClick="takeOnLetter"
+                app:srcCompat="@drawable/rr" />
+
+            <ImageView android:id="@+id/h"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:onClick="takeOnLetter"
+                app:srcCompat="@drawable/a_letter" />
+
+            <ImageView android:id="@+id/h"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:onClick="takeOnLetter"
+                app:srcCompat="@drawable/a_letter" />
+
+            <ImageView android:id="@+id/h"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:onClick="takeOnLetter"
+                app:srcCompat="@drawable/a_letter" />
+
+            <ImageView android:id="@+id/h"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:onClick="takeOnLetter"
+                app:srcCompat="@drawable/a_letter" />
+        </TableRow>
+
+        <TableRow android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView android:id="@+id/h"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:onClick="takeOnLetter"
+                app:srcCompat="@drawable/a_letter" />
+
+            <ImageView android:id="@+id/h"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:onClick="takeOnLetter"
+                app:srcCompat="@drawable/a_letter" />
+
+            <ImageView android:id="@+id/h"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:onClick="takeOnLetter"
+                app:srcCompat="@drawable/a_letter" />
+
+            <ImageView android:id="@+id/h"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:onClick="takeOnLetter"
+                app:srcCompat="@drawable/a_letter" />
+
+            <ImageView android:id="@+id/h"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:onClick="takeOnLetter"
+                app:srcCompat="@drawable/a_letter" />
+        </TableRow>
+
+        <TableRow android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView android:id="@+id/h"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:onClick="takeOnLetter"
+                app:srcCompat="@drawable/a_letter" />
+
+            <ImageView android:id="@+id/h"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:onClick="takeOnLetter"
+                app:srcCompat="@drawable/a_letter" />
+
+            <ImageView android:id="@+id/h"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:onClick="takeOnLetter"
+                app:srcCompat="@drawable/a_letter" />
+
+            <ImageView android:id="@+id/h"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:onClick="takeOnLetter"
+                app:srcCompat="@drawable/a_letter" />
+
+            <ImageView android:id="@+id/h"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:onClick="takeOnLetter"
+                app:srcCompat="@drawable/a_letter" />
+        </TableRow>
+
+        <TableRow android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView android:id="@+id/h"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:onClick="takeOnLetter"
+                app:srcCompat="@drawable/a_letter" />
+
+            <ImageView android:id="@+id/h"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:onClick="takeOnLetter"
+                app:srcCompat="@drawable/a_letter" />
+
+            <ImageView android:id="@+id/h"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:onClick="takeOnLetter" />
+
+            <ImageView android:id="@+id/h"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:onClick="takeOnLetter"
+                app:srcCompat="@drawable/a_letter" />
+
+            <ImageView android:id="@+id/h"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:onClick="takeOnLetter"
+                app:srcCompat="@drawable/a_letter" />
+        </TableRow>
+
+        <TableRow android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView android:id="@+id/h"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:onClick="takeOnLetter" />
+
+            <ImageView android:id="@+id/h"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:onClick="takeOnLetter"
+                app:srcCompat="@drawable/a_letter" />
+
+            <ImageView android:id="@+id/h"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:onClick="takeOnLetter"
+                app:srcCompat="@drawable/a_letter" />
+
+            <ImageView android:id="@+id/h"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:onClick="takeOnLetter"
+                app:srcCompat="@drawable/a_letter" />
+
+            <ImageView android:id="@+id/h"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:onClick="takeOnLetter" />
+        </TableRow>
+
+    </TableLayout>-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

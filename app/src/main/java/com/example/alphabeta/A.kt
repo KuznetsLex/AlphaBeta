@@ -45,6 +45,7 @@ class A : Activity() {
         val REQ_CODE = 100
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
 //проверка написания
         initializeRecognition()
         txtOutput = findViewById(R.id.txtOutput)
@@ -52,7 +53,7 @@ class A : Activity() {
         btnClassify = findViewById(R.id.btnClassify)
         //btnClassify.isEnabled = false
         btnClassify.setOnClickListener {
-            val thisInk = customDrawingSurface.getInk()
+            var thisInk = customDrawingSurface.getInk()
             recognizer = DigitalInkRecognition.getClient(
                 DigitalInkRecognizerOptions.builder(model!!).build()
             )
@@ -88,13 +89,51 @@ class A : Activity() {
 
             }
 
+
+            /*thisInk = customDrawingSurface.getInk()            пытался 1 нажатие
+            recognizer = DigitalInkRecognition.getClient(
+                    DigitalInkRecognizerOptions.builder(model!!).build()
+            )
+            recognizer.recognize(thisInk)
+                .addOnSuccessListener { result: RecognitionResult ->
+                    var outputString = ""
+                    txtOutput.text = ""
+                    for (candidate in result.candidates) {
+                        outputString += candidate.text + ", "
+                    }
+                    txtOutput.text = outputString
+                }
+                .addOnFailureListener { e: Exception ->
+                    Log.e("Digital Ink Test", "Error during recognition: $e")
+                }
+
+            lettera = txtOutput.text.toString()
+            println(lettera)
+            counta += 1
+            if (txtOutput.text != ""){
+                if ("A" in lettera) {
+                    var resID = getResources().getIdentifier("write_correct", "raw", getPackageName())
+                    val mediaPlayer = MediaPlayer.create(this, resID)
+                    mediaPlayer.start()
+                } else {
+                    var resID = getResources().getIdentifier("write_again", "raw", getPackageName())
+                    val mediaPlayer = MediaPlayer.create(this, resID)
+                    mediaPlayer.start()
+                }
+                val randomIntent = Intent(this, A::class.java)
+                startActivity(randomIntent)
+                txtOutput.text = ""
+
+            }*/
+
+
         }
 
 
         //подсказка
         val tip = findViewById<ImageView>(R.id.tip)
         tip.setOnClickListener() {
-            var resID = getResources().getIdentifier("a", "raw", getPackageName())
+            var resID = getResources().getIdentifier("appletree", "raw", getPackageName())
             val mediaPlayer = MediaPlayer.create(this, resID)
             mediaPlayer.start()
         }

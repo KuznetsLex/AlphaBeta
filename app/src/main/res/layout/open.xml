@@ -6,13 +6,77 @@
     android:layout_height="match_parent"
     tools:context=".Open">
 
+    <!--<ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/first_background" /> -->
 
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/fon_mamaschild"
+        tools:visibility="visible" />
 
+    <ImageView
+        android:id="@+id/ptichka"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/phon2" />
 
-    <ImageView android:id="@+id/yes"
+    <ImageView
+        android:id="@+id/zvetochek"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/zvetochek" />
+
+    <ImageView
+        android:id="@+id/bluewing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/bluewing" />
+
+    <ImageView
+        android:id="@+id/sovafon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/sovafon"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/yes"
         android:layout_width="338dp"
         android:layout_height="186dp"
-        android:background="@drawable/yes"
+        android:background="@drawable/yesnew"
         android:text="Switch"
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -22,10 +86,11 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.9" />
 
-    <ImageView android:id="@+id/no"
+    <ImageView
+        android:id="@+id/no"
         android:layout_width="338dp"
         android:layout_height="186dp"
-        android:background="@drawable/no"
+        android:background="@drawable/nonew"
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -35,12 +100,16 @@
         app:layout_constraintVertical_bias="0.576" />
 
 
-    <EditText android:id="@+id/name_edit"
+    <EditText
+        android:id="@+id/name_edit"
         android:layout_width="339dp"
         android:layout_height="50dp"
-        android:hint="       Введите имя"
+        android:background="@drawable/namefield"
+        android:hint="      Введите имя"
         android:inputType="textCapSentences"
+        android:textColor="#73AADC"
         android:visibility="gone"
+        tools:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
@@ -48,7 +117,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.42" />
 
-    <TextView android:id="@+id/intro"
+    <TextView
+        android:id="@+id/intro"
         android:layout_width="219dp"
         android:layout_height="56dp"
         android:fontFamily="@font/montserratsemibold"
@@ -61,9 +131,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.071" />
+        app:layout_constraintVertical_bias="0.026" />
 
-    <TextView android:id="@+id/name_view"
+    <TextView
+        android:id="@+id/name_view"
         android:layout_width="276dp"
         android:layout_height="125dp"
         android:fontFamily="@font/montserratsemibold"
@@ -74,12 +145,13 @@
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="0.769"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.267" />
+        app:layout_constraintVertical_bias="0.214" />
 
-    <TextView android:id="@+id/age_view"
+    <TextView
+        android:id="@+id/age_view"
         android:layout_width="349dp"
         android:layout_height="78dp"
         android:fontFamily="@font/montserratsemibold"
@@ -94,7 +166,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.279" />
 
-    <TextView android:id="@+id/add_profile"
+    <TextView
+        android:id="@+id/add_profile"
         android:layout_width="264dp"
         android:layout_height="41dp"
         android:fontFamily="@font/montserratmedium"
@@ -110,7 +183,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.383" />
 
-    <TextView android:id="@+id/eyes1"
+    <TextView
+        android:id="@+id/eyes1"
         android:layout_width="377dp"
         android:layout_height="78dp"
         android:fontFamily="@font/montserratsemibold"
@@ -125,7 +199,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.28" />
 
-    <TextView android:id="@+id/eyes2"
+    <TextView
+        android:id="@+id/eyes2"
         android:layout_width="361dp"
         android:layout_height="51dp"
         android:fontFamily="@font/montserratmedium"
@@ -140,7 +215,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.383" />
 
-    <TextView android:id="@+id/almost"
+    <TextView
+        android:id="@+id/almost"
         android:layout_width="218dp"
         android:layout_height="57dp"
         android:fontFamily="@font/montserratsemibold"
@@ -156,14 +232,15 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.088" />
 
-    <TextView android:id="@+id/recommend"
+    <TextView
+        android:id="@+id/recommend"
         android:layout_width="292dp"
         android:layout_height="58dp"
         android:fontFamily="@font/montserratsemibold"
         android:gravity="center"
         android:text="Рекомендуемое время активности"
         android:textColor="@color/black"
-        android:textSize="23dp"
+        android:textSize="23sp"
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -172,49 +249,41 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.235" />
 
-    <ImageView android:id="@+id/alphabeta"
+    <ImageView
+        android:id="@+id/alphabeta"
         android:layout_width="288dp"
         android:layout_height="106dp"
-        android:visibility="visible"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.319"
+        app:layout_constraintVertical_bias="0.217"
         app:srcCompat="@drawable/alphabeta" />
 
-    <ImageView android:id="@+id/create_profile"
-        android:layout_width="341dp"
-        android:layout_height="80dp"
-        android:onClick="toSecond"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.926"
-        app:srcCompat="@drawable/create" />
 
     <TextView android:id="@+id/minutes"
-        android:layout_width="357dp"
-        android:layout_height="255dp"
-        android:fontFamily="@font/montserratsemibold"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:fontFamily="@font/kodchasanbold"
         android:gravity="center"
 
+        android:text="10"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.537"
+        app:layout_constraintHorizontal_bias="0.13"
+
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.333"
+        app:layout_constraintVertical_bias="0.285"
+        tools:visibility="visible" />
 
-        android:text="   минут в день"
-        android:textColor="@color/black"
-        android:textSize="35dp"
-        android:visibility="gone" />
-
-    <TextView android:id="@+id/start_view"
+    <TextView
+        android:id="@+id/start_view"
         android:layout_width="218dp"
         android:layout_height="55dp"
         android:fontFamily="@font/montserratsemibold"
@@ -230,21 +299,22 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.086" />
 
-    <ImageView android:id="@+id/next1"
+    <ImageView
+        android:id="@+id/next1"
         android:layout_width="341dp"
         android:layout_height="80dp"
-        android:visibility="gone"
         android:onClick="toThird"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.926"
-        app:srcCompat="@drawable/next" />
+        app:srcCompat="@drawable/prodolzit" />
 
 
-
-    <ImageView android:id="@+id/start"
+    <ImageView
+        android:id="@+id/start"
         android:layout_width="341dp"
         android:layout_height="80dp"
         android:visibility="gone"
@@ -252,52 +322,44 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.926"
-        app:srcCompat="@drawable/start" />
+        app:layout_constraintVertical_bias="0.979"
+        app:srcCompat="@drawable/yellowstart"
+        tools:visibility="gone" />
 
-    <ImageView android:id="@+id/back1"
+    <ImageView
+        android:id="@+id/back1"
         android:layout_width="16dp"
         android:layout_height="17dp"
-        android:visibility="gone"
         android:onClick="toFirst"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.107"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.093"
-        app:srcCompat="@drawable/back" />
+        app:srcCompat="@drawable/backpukpuk" />
 
-    <ImageView android:id="@+id/back2"
+    <ImageView
+        android:id="@+id/back2"
         android:layout_width="16dp"
         android:layout_height="17dp"
-        android:visibility="gone"
         android:onClick="toSecond"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.107"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.093"
-        app:srcCompat="@drawable/back" />
+        app:srcCompat="@drawable/paupauback" />
 
 
-    <ImageView android:id="@+id/back3"
+    <ImageView
+        android:id="@+id/back3"
         android:layout_width="16dp"
         android:layout_height="17dp"
-        android:visibility="gone"
         android:onClick="toThird"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.107"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.093"
-        app:srcCompat="@drawable/back" />
-
-    <ImageView android:id="@+id/back4"
-        android:layout_width="16dp"
-        android:layout_height="17dp"
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -305,7 +367,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.093"
-        app:srcCompat="@drawable/back" />
+        app:srcCompat="@drawable/backpukpuk" />
+
+    <ImageView
+        android:id="@+id/back4"
+        android:layout_width="15dp"
+        android:layout_height="16dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.093"
+        app:srcCompat="@drawable/whiteback"
+        tools:visibility="gone" />
 
     <ImageView android:id="@+id/ts"
         android:layout_width="102dp"
@@ -313,11 +389,11 @@
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.092"
+        app:layout_constraintHorizontal_bias="0.089"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.518"
-        app:srcCompat="@drawable/ts" />
+        app:layout_constraintVertical_bias="0.472"
+        app:srcCompat="@drawable/twosix" />
 
     <ImageView android:id="@+id/tfi"
         android:layout_width="102dp"
@@ -328,8 +404,8 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.518"
-        app:srcCompat="@drawable/tfi" />
+        app:layout_constraintVertical_bias="0.469"
+        app:srcCompat="@drawable/twofif" />
 
     <ImageView android:id="@+id/tfo"
         android:layout_width="102dp"
@@ -337,11 +413,11 @@
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.903"
+        app:layout_constraintHorizontal_bias="0.91"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.518"
-        app:srcCompat="@drawable/tfo" />
+        app:layout_constraintVertical_bias="0.469"
+        app:srcCompat="@drawable/twofor" />
 
     <ImageView android:id="@+id/tth"
         android:layout_width="102dp"
@@ -349,11 +425,11 @@
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.092"
+        app:layout_constraintHorizontal_bias="0.089"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.61"
-        app:srcCompat="@drawable/tth" />
+        app:layout_constraintVertical_bias="0.562"
+        app:srcCompat="@drawable/twothr" />
 
     <ImageView android:id="@+id/ttw"
         android:layout_width="102dp"
@@ -364,8 +440,8 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.61"
-        app:srcCompat="@drawable/ttw" />
+        app:layout_constraintVertical_bias="0.563"
+        app:srcCompat="@drawable/twotwo" />
 
     <ImageView android:id="@+id/tel"
         android:layout_width="102dp"
@@ -373,11 +449,11 @@
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintHorizontal_bias="0.91"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.61"
-        app:srcCompat="@drawable/tel" />
+        app:layout_constraintVertical_bias="0.562"
+        app:srcCompat="@drawable/twoelv" />
 
     <ImageView android:id="@+id/tte"
         android:layout_width="102dp"
@@ -385,22 +461,49 @@
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.702"
-        app:srcCompat="@drawable/tte" />
+        app:layout_constraintVertical_bias="0.656"
+        app:srcCompat="@drawable/twoten" />
 
-    <ImageView android:id="@+id/time"
-        android:layout_width="410dp"
-        android:layout_height="271dp"
+    <ImageView
+        android:id="@+id/time"
+        android:layout_width="254dp"
+        android:layout_height="59dp"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.781"
-        app:srcCompat="@drawable/fire" />
+        app:layout_constraintVertical_bias="0.145" />
+
+
+
+    <ImageView
+        android:id="@+id/create_profile"
+        android:layout_width="341dp"
+        android:layout_height="80dp"
+        android:onClick="toSecond"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.926"
+        app:srcCompat="@drawable/createprofile"
+         />
+
+    <ImageView
+        android:id="@+id/sova"
+        android:layout_width="372dp"
+        android:layout_height="441dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="292dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sova" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

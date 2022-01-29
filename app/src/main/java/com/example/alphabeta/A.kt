@@ -196,7 +196,7 @@ class A : Activity() {
                     val result: ArrayList<String>? = data
                             .getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS)
                     a = result?.get(0).toString()
-                    if ((a == "a") or (a == "hey")) {
+                    if ((a == "a") or (a == "hey") or (a == "эй")) {
                         var resID = getResources().getIdentifier("good", "raw", getPackageName())
                         val mediaPlayer = MediaPlayer.create(this, resID)
                         mediaPlayer.start()

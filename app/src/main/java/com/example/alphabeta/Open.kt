@@ -211,8 +211,8 @@ class Open : AppCompatActivity(){
         next1.visibility= (View.VISIBLE)
         name_edit.visibility= (View.VISIBLE)
         ptichka.visibility= (View.VISIBLE)
-        name_view.visibility= (View.GONE)
 
+        name_view.visibility= (View.GONE)
         back2.visibility= (View.GONE)
         age_view.visibility= (View.GONE)
         add_profile.visibility= (View.GONE)

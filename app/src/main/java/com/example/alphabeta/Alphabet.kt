@@ -36,7 +36,7 @@ class Alphabet : AppCompatActivity() {
                     finishAffinity()
                 }
             }
-            timer.start()
+            //timer.start() Не запускать таймер пока
 
 
         }

@@ -113,8 +113,8 @@
         app:layout_constraintVertical_bias="0.231"></ImageView>
 
     <Switch android:id="@+id/btnChange"
-        android:layout_width="80dp"
-        android:layout_height="85dp"
+        android:layout_width="85dp"
+        android:layout_height="90dp"
         android:background="@drawable/onv1"
         android:checked="true"
         android:thumb="@drawable/space"

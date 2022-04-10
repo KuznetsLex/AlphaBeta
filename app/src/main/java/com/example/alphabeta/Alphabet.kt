@@ -80,6 +80,19 @@ class Alphabet : AppCompatActivity() {
         mediaPlayer.start()
 
     }
+
+    fun takeOnF(view: View) {
+        //var letter = findViewById<RadioButton>(R.id.b)
+        //letter.setBackgroundResource(R.drawable.b)
+        flag="F"
+    }
+
+    fun takeOnG(view: View) {
+        //var letter = findViewById<RadioButton>(R.id.b)
+        //letter.setBackgroundResource(R.drawable.b)
+        flag="G"
+    }
+
     fun takeOnO(view: View) {
         //var letter = findViewById<RadioButton>(R.id.a)
         //letter.setBackgroundResource(R.drawable.a)

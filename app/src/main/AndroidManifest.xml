@@ -55,6 +55,22 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".F">
+            <intent-filter>
+                <action android:name="android.intent.action.F" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".G">
+            <intent-filter>
+                <action android:name="android.intent.action.G" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
         <activity android:name=".O">
             <intent-filter>
                 <action android:name="android.intent.action.O" />

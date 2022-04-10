@@ -59,6 +59,17 @@ class Alphabet : AppCompatActivity() {
         flag="B"
     }
 
+    fun takeOnC(view: View) {
+        //var letter = findViewById<RadioButton>(R.id.b)
+        //letter.setBackgroundResource(R.drawable.b)
+        flag="C"
+    }
+
+    fun takeOnD(view: View) {
+        //var letter = findViewById<RadioButton>(R.id.b)
+        //letter.setBackgroundResource(R.drawable.b)
+        flag="D"
+    }
 
     fun takeOnE(view: View) {
         //var letter = findViewById<RadioButton>(R.id.a)

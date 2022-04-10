@@ -23,6 +23,30 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".B">
+            <intent-filter>
+                <action android:name="android.intent.action.B" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".C">
+            <intent-filter>
+                <action android:name="android.intent.action.C" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".D">
+            <intent-filter>
+                <action android:name="android.intent.action.D" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
         <activity android:name=".E">
             <intent-filter>
                 <action android:name="android.intent.action.E" />
@@ -41,13 +65,7 @@
 
 
 
-        <activity android:name=".B">
-            <intent-filter>
-                <action android:name="android.intent.action.B" />
 
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
 
         <activity android:name=".MainMenu"></activity>
         <activity android:name=".Fruits"></activity>

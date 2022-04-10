@@ -13,11 +13,31 @@ import android.widget.TextView
 import android.widget.Toast
 import java.util.Locale
 import com.bumptech.glide.Glide
+import androidx.appcompat.app.AppCompatActivity
+import android.util.Log
+import android.view.View
+import android.widget.*
+import com.google.mlkit.common.model.DownloadConditions
+import com.google.mlkit.common.model.RemoteModelManager
+import com.google.mlkit.vision.digitalink.*
+
 
 class B : Activity() {
     var a = "space"
     var textView: TextView? = null
     private val REQ_CODE = 100
+    var lettera = "space"
+    var counta = 0
+    val alett: Char = 'B'
+    lateinit var txtOutput: TextView
+    lateinit var customDrawingSurface: CustomDrawingSurface
+    lateinit var drawingView: DrawingView
+    lateinit var btnClassify: ImageView
+    lateinit var aletter:ImageView
+    private lateinit var btnClear: ImageView
+    lateinit var recognizer: DigitalInkRecognizer
+    val remoteModelManager = RemoteModelManager.getInstance()
+    var model: DigitalInkRecognitionModel? = null
     companion object {
         const val DEFAULT_100_PERCENT = 100
     }
@@ -26,14 +46,54 @@ class B : Activity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+//проверка написания
+        initializeRecognition()
+        txtOutput = findViewById(R.id.txtOutput)
+        customDrawingSurface = findViewById(R.id.customDrawingSurface)
+        btnClassify = findViewById(R.id.btnClassify)
+        btnClassify.setOnClickListener {
+            var thisInk = customDrawingSurface.getInk()
+            recognizer = DigitalInkRecognition.getClient(
+                DigitalInkRecognizerOptions.builder(model!!).build()
+            )
+            recognizer.recognize(thisInk)
+                .addOnSuccessListener { result: RecognitionResult ->
+                    var outputString = ""
+                    txtOutput.text = ""
+                    for (candidate in result.candidates) {
+                        outputString += candidate.text + ", "
+                    }
+                    txtOutput.text = outputString
+                }
+                .addOnFailureListener { e: Exception ->
+                    Log.e("Digital Ink Test", "Error during recognition: $e")
+                }
 
-        //стирание
+            lettera = txtOutput.text.toString()
+            println(lettera)
+            counta += 1
+            if (txtOutput.text != ""){
+                if ("B" in lettera) {
+                    var resID = getResources().getIdentifier("write_correct", "raw", getPackageName())
+                    val mediaPlayer = MediaPlayer.create(this, resID)
+                    mediaPlayer.start()
+                } else {
+                    var resID = getResources().getIdentifier("write_again", "raw", getPackageName())
+                    val mediaPlayer = MediaPlayer.create(this, resID)
+                    mediaPlayer.start()
+                }
+                val randomIntent = Intent(this, A::class.java)
+                startActivity(randomIntent)
+                txtOutput.text = ""
+
+            }
+        }
 
 
         //подсказка
         val tip = findViewById<ImageView>(R.id.tip)
         tip.setOnClickListener() {
-            var resID = getResources().getIdentifier("a_letter", "raw", getPackageName())
+            var resID = getResources().getIdentifier("appletree", "raw", getPackageName())
             val mediaPlayer = MediaPlayer.create(this, resID)
             mediaPlayer.start()
         }
@@ -46,12 +106,25 @@ class B : Activity() {
         }
 
         //к фруктам
-        /*val forward = findViewById<ImageView>(R.id.imageView2)
+        val forward = findViewById<ImageView>(R.id.imageView2)
         forward.setOnClickListener{
             val randomIntent = Intent(this, Fruits::class.java)
             startActivity(randomIntent)
-        }*/
+        }
 
+        //контур свич
+        val standardSwitch:Switch = findViewById(R.id.btnChange)
+
+        aletter = findViewById(R.id.letterai)
+        standardSwitch.setOnCheckedChangeListener { buttonView, isChecked ->
+            if(isChecked){
+                standardSwitch.background=getResources().getDrawable(R.drawable.onv1)
+                aletter.visibility = View.VISIBLE
+            }else{
+                standardSwitch.background=getResources().getDrawable(R.drawable.offv1)
+                aletter.visibility = View.GONE
+            }
+        }
 
 
 
@@ -60,19 +133,17 @@ class B : Activity() {
         speak.setOnClickListener {
             val intent = Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH)
             intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL,
-                    RecognizerIntent.LANGUAGE_MODEL_FREE_FORM)
+                RecognizerIntent.LANGUAGE_MODEL_FREE_FORM)
             intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, Locale.getDefault())
             intent.putExtra(RecognizerIntent.EXTRA_PROMPT, "Говорите")
             try {
                 startActivityForResult(intent, REQ_CODE)
             } catch (a: ActivityNotFoundException) {
                 Toast.makeText(applicationContext,
-                        "Просим прощения, ваше устройство не поддерживается",
-                        Toast.LENGTH_SHORT).show()
+                    "Просим прощения, ваше устройство не поддерживается",
+                    Toast.LENGTH_SHORT).show()
             }
         }
-
-        Glide.with(getApplicationContext()).load("https://firebasestorage.googleapis.com/v0/b/alphabeta-578df.appspot.com/o/common_tip.png?alt=media&token=7a2f76c5-baa1-4bb7-ab4f-212d817f3884").into(tip);
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
@@ -81,19 +152,31 @@ class B : Activity() {
             REQ_CODE -> {
                 if (resultCode == RESULT_OK && null != data) {
                     val result: ArrayList<String>? = data
-                            .getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS)
+                        .getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS)
                     a = result?.get(0).toString()
-                    if (a == "а") {
+                    if ((a == "b") or (a == "be") or (a == "би")) {
                         var resID = getResources().getIdentifier("good", "raw", getPackageName())
                         val mediaPlayer = MediaPlayer.create(this, resID)
                         mediaPlayer.start()
                     } else{
-                        var resID = getResources().getIdentifier("bad", "raw", getPackageName())
+                        var resID = getResources().getIdentifier("a_again", "raw", getPackageName())
                         val mediaPlayer = MediaPlayer.create(this, resID)
                         mediaPlayer.start()
                     }
                 }
             }
+        }
+    }
+
+    fun initializeRecognition(){
+        val modelIdentifier: DigitalInkRecognitionModelIdentifier? =
+            DigitalInkRecognitionModelIdentifier.fromLanguageTag("en-US")
+        model = DigitalInkRecognitionModel.builder(modelIdentifier!!).build()
+        remoteModelManager.download(model!!, DownloadConditions.Builder().build()).addOnSuccessListener {
+            Log.i("InkSample", "Model Downloaded")
+            btnClassify.isEnabled = true
+        }. addOnFailureListener {  e: Exception ->
+            Log.e("InkSample", "Model failed $e")
         }
     }
 }

@@ -44,7 +44,7 @@ class E : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         val REQ_CODE = 100
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_e)
+        setContentView(R.layout.activity_main)
 //проверка написания
         initializeRecognition()
         txtOutput = findViewById(R.id.txtOutput)
@@ -146,7 +146,7 @@ class E : Activity() {
             }
         }
 
-        Glide.with(getApplicationContext()).load("https://firebasestorage.googleapis.com/v0/b/alphabeta-578df.appspot.com/o/common_tip.png?alt=media&token=7a2f76c5-baa1-4bb7-ab4f-212d817f3884").into(tip);
+
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
@@ -157,7 +157,7 @@ class E : Activity() {
                     val result: ArrayList<String>? = data
                             .getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS)
                     a = result?.get(0).toString()
-                    if ((a == "e") or (a == "eh")) {
+                    if ((a == "e") or (a == "eh") or (a == "и")) {
                         var resID = getResources().getIdentifier("good", "raw", getPackageName())
                         val mediaPlayer = MediaPlayer.create(this, resID)
                         mediaPlayer.start()

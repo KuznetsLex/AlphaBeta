@@ -52,6 +52,14 @@ class Alphabet : AppCompatActivity() {
         mediaPlayer.start()
 
     }
+
+    fun takeOnB(view: View) {
+        //var letter = findViewById<RadioButton>(R.id.b)
+        //letter.setBackgroundResource(R.drawable.b)
+        flag="B"
+    }
+
+
     fun takeOnE(view: View) {
         //var letter = findViewById<RadioButton>(R.id.a)
         //letter.setBackgroundResource(R.drawable.a)
@@ -71,11 +79,7 @@ class Alphabet : AppCompatActivity() {
 
     }
 
-    fun takeOnB(view: View) {
-        //var letter = findViewById<RadioButton>(R.id.b)
-        //letter.setBackgroundResource(R.drawable.b)
-        flag="B"
-    }
+
 
     fun know(view: View){
         val randomIntent = Intent("android.intent.action.$flag")

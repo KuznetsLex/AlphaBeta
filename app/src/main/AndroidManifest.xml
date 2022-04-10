@@ -48,6 +48,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+
         <activity android:name=".MainMenu"></activity>
         <activity android:name=".Fruits"></activity>
         <activity android:name=".Alphabet"></activity>

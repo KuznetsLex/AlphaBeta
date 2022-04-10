@@ -43,7 +43,7 @@ class O : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         val REQ_CODE = 100
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_o)
+        setContentView(R.layout.activity_main)
 //проверка написания
         initializeRecognition()
         txtOutput = findViewById(R.id.txtOutput)
@@ -145,7 +145,7 @@ class O : Activity() {
             }
         }
 
-        Glide.with(getApplicationContext()).load("https://firebasestorage.googleapis.com/v0/b/alphabeta-578df.appspot.com/o/common_tip.png?alt=media&token=7a2f76c5-baa1-4bb7-ab4f-212d817f3884").into(tip);
+        //Glide.with(getApplicationContext()).load("https://firebasestorage.googleapis.com/v0/b/alphabeta-578df.appspot.com/o/common_tip.png?alt=media&token=7a2f76c5-baa1-4bb7-ab4f-212d817f3884").into(tip);
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {

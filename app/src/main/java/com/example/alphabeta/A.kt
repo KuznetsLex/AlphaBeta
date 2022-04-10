@@ -212,7 +212,6 @@ class A : Activity() {
     fun initializeRecognition(){
         val modelIdentifier: DigitalInkRecognitionModelIdentifier? =
             DigitalInkRecognitionModelIdentifier.fromLanguageTag("en-US")
-        // Use "zh-Hani-CN" for Chinese!
         model = DigitalInkRecognitionModel.builder(modelIdentifier!!).build()
         remoteModelManager.download(model!!, DownloadConditions.Builder().build()).addOnSuccessListener {
             Log.i("InkSample", "Model Downloaded")

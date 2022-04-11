@@ -167,6 +167,55 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".U">
+            <intent-filter>
+                <action android:name="android.intent.action.U" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".V">
+            <intent-filter>
+                <action android:name="android.intent.action.V" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".W">
+            <intent-filter>
+                <action android:name="android.intent.action.W" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".X">
+            <intent-filter>
+                <action android:name="android.intent.action.X" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Y">
+            <intent-filter>
+                <action android:name="android.intent.action.Y" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Z">
+            <intent-filter>
+                <action android:name="android.intent.action.Z" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
         <activity android:name=".MainMenu"></activity>
         <activity android:name=".Fruits"></activity>
         <activity android:name=".Alphabet"></activity>

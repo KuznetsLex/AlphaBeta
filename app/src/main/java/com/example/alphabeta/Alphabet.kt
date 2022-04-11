@@ -226,6 +226,59 @@ class Alphabet : AppCompatActivity() {
         mediaPlayer.start()
     }
 
+    fun takeOnU(view: View) {
+        //var letter = findViewById<RadioButton>(R.id.b)
+        //letter.setBackgroundResource(R.drawable.b)
+        flag="U"
+        var resID = getResources().getIdentifier("u", "raw", getPackageName())
+        val mediaPlayer = MediaPlayer.create(this, resID)
+        mediaPlayer.start()
+    }
+
+    fun takeOnV(view: View) {
+        //var letter = findViewById<RadioButton>(R.id.b)
+        //letter.setBackgroundResource(R.drawable.b)
+        flag="V"
+        var resID = getResources().getIdentifier("v", "raw", getPackageName())
+        val mediaPlayer = MediaPlayer.create(this, resID)
+        mediaPlayer.start()
+    }
+
+    fun takeOnW(view: View) {
+        //var letter = findViewById<RadioButton>(R.id.b)
+        //letter.setBackgroundResource(R.drawable.b)
+        flag="W"
+        var resID = getResources().getIdentifier("w", "raw", getPackageName())
+        val mediaPlayer = MediaPlayer.create(this, resID)
+        mediaPlayer.start()
+    }
+
+    fun takeOnX(view: View) {
+        //var letter = findViewById<RadioButton>(R.id.b)
+        //letter.setBackgroundResource(R.drawable.b)
+        flag="X"
+        var resID = getResources().getIdentifier("x", "raw", getPackageName())
+        val mediaPlayer = MediaPlayer.create(this, resID)
+        mediaPlayer.start()
+    }
+
+    fun takeOnY(view: View) {
+        //var letter = findViewById<RadioButton>(R.id.b)
+        //letter.setBackgroundResource(R.drawable.b)
+        flag="Y"
+        var resID = getResources().getIdentifier("y", "raw", getPackageName())
+        val mediaPlayer = MediaPlayer.create(this, resID)
+        mediaPlayer.start()
+    }
+
+    fun takeOnZ(view: View) {
+        //var letter = findViewById<RadioButton>(R.id.b)
+        //letter.setBackgroundResource(R.drawable.b)
+        flag="Z"
+        var resID = getResources().getIdentifier("z", "raw", getPackageName())
+        val mediaPlayer = MediaPlayer.create(this, resID)
+        mediaPlayer.start()
+    }
 
     fun know(view: View){
         val randomIntent = Intent("android.intent.action.$flag")

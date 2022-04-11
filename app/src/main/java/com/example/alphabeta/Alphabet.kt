@@ -135,6 +135,42 @@ class Alphabet : AppCompatActivity() {
         mediaPlayer.start()
     }
 
+    fun takeOnK(view: View) {
+        //var letter = findViewById<RadioButton>(R.id.b)
+        //letter.setBackgroundResource(R.drawable.b)
+        flag="K"
+        var resID = getResources().getIdentifier("k", "raw", getPackageName())
+        val mediaPlayer = MediaPlayer.create(this, resID)
+        mediaPlayer.start()
+    }
+
+    fun takeOnL(view: View) {
+        //var letter = findViewById<RadioButton>(R.id.b)
+        //letter.setBackgroundResource(R.drawable.b)
+        flag="L"
+        var resID = getResources().getIdentifier("l", "raw", getPackageName())
+        val mediaPlayer = MediaPlayer.create(this, resID)
+        mediaPlayer.start()
+    }
+
+    fun takeOnM(view: View) {
+        //var letter = findViewById<RadioButton>(R.id.b)
+        //letter.setBackgroundResource(R.drawable.b)
+        flag="M"
+        var resID = getResources().getIdentifier("m", "raw", getPackageName())
+        val mediaPlayer = MediaPlayer.create(this, resID)
+        mediaPlayer.start()
+    }
+
+    fun takeOnN(view: View) {
+        //var letter = findViewById<RadioButton>(R.id.b)
+        //letter.setBackgroundResource(R.drawable.b)
+        flag="N"
+        var resID = getResources().getIdentifier("n", "raw", getPackageName())
+        val mediaPlayer = MediaPlayer.create(this, resID)
+        mediaPlayer.start()
+    }
+
     fun takeOnO(view: View) {
         //var letter = findViewById<RadioButton>(R.id.a)
         //letter.setBackgroundResource(R.drawable.a)

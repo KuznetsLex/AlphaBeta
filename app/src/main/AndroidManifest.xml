@@ -95,6 +95,38 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".K">
+            <intent-filter>
+                <action android:name="android.intent.action.K" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".L">
+            <intent-filter>
+                <action android:name="android.intent.action.L" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".M">
+            <intent-filter>
+                <action android:name="android.intent.action.M" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".N">
+            <intent-filter>
+                <action android:name="android.intent.action.N" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
         <activity android:name=".O">
             <intent-filter>
                 <action android:name="android.intent.action.O" />

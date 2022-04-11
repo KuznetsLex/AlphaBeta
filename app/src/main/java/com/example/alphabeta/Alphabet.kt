@@ -181,6 +181,50 @@ class Alphabet : AppCompatActivity() {
 
     }
 
+    fun takeOnP(view: View) {
+        //var letter = findViewById<RadioButton>(R.id.b)
+        //letter.setBackgroundResource(R.drawable.b)
+        flag="P"
+        var resID = getResources().getIdentifier("p", "raw", getPackageName())
+        val mediaPlayer = MediaPlayer.create(this, resID)
+        mediaPlayer.start()
+    }
+
+    fun takeOnQ(view: View) {
+        //var letter = findViewById<RadioButton>(R.id.b)
+        //letter.setBackgroundResource(R.drawable.b)
+        flag="Q"
+        var resID = getResources().getIdentifier("q", "raw", getPackageName())
+        val mediaPlayer = MediaPlayer.create(this, resID)
+        mediaPlayer.start()
+    }
+
+    fun takeOnR(view: View) {
+        //var letter = findViewById<RadioButton>(R.id.b)
+        //letter.setBackgroundResource(R.drawable.b)
+        flag="Rr"
+        var resID = getResources().getIdentifier("r", "raw", getPackageName())
+        val mediaPlayer = MediaPlayer.create(this, resID)
+        mediaPlayer.start()
+    }
+
+    fun takeOnS(view: View) {
+        //var letter = findViewById<RadioButton>(R.id.b)
+        //letter.setBackgroundResource(R.drawable.b)
+        flag="S"
+        var resID = getResources().getIdentifier("s", "raw", getPackageName())
+        val mediaPlayer = MediaPlayer.create(this, resID)
+        mediaPlayer.start()
+    }
+
+    fun takeOnT(view: View) {
+        //var letter = findViewById<RadioButton>(R.id.b)
+        //letter.setBackgroundResource(R.drawable.b)
+        flag="T"
+        var resID = getResources().getIdentifier("t", "raw", getPackageName())
+        val mediaPlayer = MediaPlayer.create(this, resID)
+        mediaPlayer.start()
+    }
 
 
     fun know(view: View){

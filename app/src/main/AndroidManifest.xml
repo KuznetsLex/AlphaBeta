@@ -135,9 +135,37 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".P">
+            <intent-filter>
+                <action android:name="android.intent.action.P" />
 
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
 
+        <activity android:name=".Rr">
+            <intent-filter>
+                <action android:name="android.intent.action.Rr" />
 
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".S">
+            <intent-filter>
+                <action android:name="android.intent.action.S" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".T">
+            <intent-filter>
+                <action android:name="android.intent.action.T" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
 
         <activity android:name=".MainMenu"></activity>
         <activity android:name=".Fruits"></activity>

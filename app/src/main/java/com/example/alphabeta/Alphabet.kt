@@ -57,18 +57,27 @@ class Alphabet : AppCompatActivity() {
         //var letter = findViewById<RadioButton>(R.id.b)
         //letter.setBackgroundResource(R.drawable.b)
         flag="B"
+        var resID = getResources().getIdentifier("b", "raw", getPackageName())
+        val mediaPlayer = MediaPlayer.create(this, resID)
+        mediaPlayer.start()
     }
 
     fun takeOnC(view: View) {
         //var letter = findViewById<RadioButton>(R.id.b)
         //letter.setBackgroundResource(R.drawable.b)
         flag="C"
+        var resID = getResources().getIdentifier("c", "raw", getPackageName())
+        val mediaPlayer = MediaPlayer.create(this, resID)
+        mediaPlayer.start()
     }
 
     fun takeOnD(view: View) {
         //var letter = findViewById<RadioButton>(R.id.b)
         //letter.setBackgroundResource(R.drawable.b)
         flag="D"
+        var resID = getResources().getIdentifier("d", "raw", getPackageName())
+        val mediaPlayer = MediaPlayer.create(this, resID)
+        mediaPlayer.start()
     }
 
     fun takeOnE(view: View) {
@@ -85,12 +94,45 @@ class Alphabet : AppCompatActivity() {
         //var letter = findViewById<RadioButton>(R.id.b)
         //letter.setBackgroundResource(R.drawable.b)
         flag="F"
+        var resID = getResources().getIdentifier("f", "raw", getPackageName())
+        val mediaPlayer = MediaPlayer.create(this, resID)
+        mediaPlayer.start()
     }
 
     fun takeOnG(view: View) {
         //var letter = findViewById<RadioButton>(R.id.b)
         //letter.setBackgroundResource(R.drawable.b)
         flag="G"
+        var resID = getResources().getIdentifier("g", "raw", getPackageName())
+        val mediaPlayer = MediaPlayer.create(this, resID)
+        mediaPlayer.start()
+    }
+
+    fun takeOnH(view: View) {
+        //var letter = findViewById<RadioButton>(R.id.b)
+        //letter.setBackgroundResource(R.drawable.b)
+        flag="H"
+        var resID = getResources().getIdentifier("h", "raw", getPackageName())
+        val mediaPlayer = MediaPlayer.create(this, resID)
+        mediaPlayer.start()
+    }
+
+    fun takeOnI(view: View) {
+        //var letter = findViewById<RadioButton>(R.id.b)
+        //letter.setBackgroundResource(R.drawable.b)
+        flag="I"
+        var resID = getResources().getIdentifier("i", "raw", getPackageName())
+        val mediaPlayer = MediaPlayer.create(this, resID)
+        mediaPlayer.start()
+    }
+
+    fun takeOnJ(view: View) {
+        //var letter = findViewById<RadioButton>(R.id.b)
+        //letter.setBackgroundResource(R.drawable.b)
+        flag="J"
+        var resID = getResources().getIdentifier("j", "raw", getPackageName())
+        val mediaPlayer = MediaPlayer.create(this, resID)
+        mediaPlayer.start()
     }
 
     fun takeOnO(view: View) {

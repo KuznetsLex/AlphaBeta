@@ -71,6 +71,30 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".H">
+            <intent-filter>
+                <action android:name="android.intent.action.H" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".I">
+            <intent-filter>
+                <action android:name="android.intent.action.I" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".J">
+            <intent-filter>
+                <action android:name="android.intent.action.J" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
         <activity android:name=".O">
             <intent-filter>
                 <action android:name="android.intent.action.O" />

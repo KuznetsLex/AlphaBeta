@@ -41,7 +41,9 @@ class A : Activity() {
     companion object {
         const val DEFAULT_100_PERCENT = 100
     }
+
     override fun onCreate(savedInstanceState: Bundle?) {
+
         val REQ_CODE = 100
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -74,7 +76,7 @@ class A : Activity() {
             println(lettera)
             counta += 1
             if (txtOutput.text != ""){
-                if ("A" in lettera) {
+                if ("A" in lettera.substringBefore(',')){
                     var resID = getResources().getIdentifier("write_correct", "raw", getPackageName())
                     val mediaPlayer = MediaPlayer.create(this, resID)
                     mediaPlayer.start()
@@ -184,7 +186,8 @@ class A : Activity() {
                         Toast.LENGTH_SHORT).show()
             }
         }
-
+        val propis=findViewById<ImageView>(R.id.letterai)
+        propis.setImageResource(R.drawable.bukva_a)
             //Glide.with(getApplicationContext()).load("https://firebasestorage.googleapis.com/v0/b/alphabeta-578df.appspot.com/o/common_tip.png?alt=media&token=7a2f76c5-baa1-4bb7-ab4f-212d817f3884").into(tip);
     }
 

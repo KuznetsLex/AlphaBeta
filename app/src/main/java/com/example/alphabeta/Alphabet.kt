@@ -18,7 +18,7 @@ import android.widget.Toast
 
 class Alphabet : AppCompatActivity() {
     //var radioButton = findViewById<View>(R.id.a)
-    var flag : Any = "A"
+    var flag : Any = ""
     //var letter = findViewById<RadioButton>(R.id.a)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

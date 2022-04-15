@@ -73,7 +73,7 @@ class E : Activity() {
             println(lettera)
             counta += 1
             if (txtOutput.text != ""){
-                if ("E" in lettera) {
+                if ("E" in lettera.substringBefore(',')) {
                     var resID = getResources().getIdentifier("write_correct", "raw", getPackageName())
                     val mediaPlayer = MediaPlayer.create(this, resID)
                     mediaPlayer.start()
@@ -146,7 +146,8 @@ class E : Activity() {
             }
         }
 
-
+        val propis=findViewById<ImageView>(R.id.letterai)
+        propis.setImageResource(R.drawable.bukva_e)
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {

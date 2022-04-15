@@ -72,7 +72,7 @@ class O : Activity() {
             println(lettera)
             counta += 1
             if (txtOutput.text != ""){
-                if ("O" in lettera) {
+                if ("O" in lettera.substringBefore(',')) {
                     var resID = getResources().getIdentifier("write_correct", "raw", getPackageName())
                     val mediaPlayer = MediaPlayer.create(this, resID)
                     mediaPlayer.start()
@@ -144,7 +144,8 @@ class O : Activity() {
                         Toast.LENGTH_SHORT).show()
             }
         }
-
+        val propis=findViewById<ImageView>(R.id.letterai)
+        propis.setImageResource(R.drawable.bukva_o)
         //Glide.with(getApplicationContext()).load("https://firebasestorage.googleapis.com/v0/b/alphabeta-578df.appspot.com/o/common_tip.png?alt=media&token=7a2f76c5-baa1-4bb7-ab4f-212d817f3884").into(tip);
     }
 

@@ -47,11 +47,12 @@ class B : Activity() {
         setContentView(R.layout.activity_main)
 
 //проверка написания
-        initializeRecognition()
+
         txtOutput = findViewById(R.id.txtOutput)
         customDrawingSurface = findViewById(R.id.customDrawingSurface)
         btnClassify = findViewById(R.id.btnClassify)
         btnClassify.setOnClickListener {
+            initializeRecognition()
             var thisInk = customDrawingSurface.getInk()
             recognizer = DigitalInkRecognition.getClient(
                 DigitalInkRecognizerOptions.builder(model!!).build()
@@ -73,7 +74,7 @@ class B : Activity() {
             println(lettera)
             counta += 1
             if (txtOutput.text != ""){
-                if ("B" in lettera) {
+                if ("B" in lettera.substringBefore(',')) {
                     var resID = getResources().getIdentifier("write_correct", "raw", getPackageName())
                     val mediaPlayer = MediaPlayer.create(this, resID)
                     mediaPlayer.start()
@@ -144,6 +145,8 @@ class B : Activity() {
                     Toast.LENGTH_SHORT).show()
             }
         }
+        val propis=findViewById<ImageView>(R.id.letterai)
+        propis.setImageResource(R.drawable.bukva_b)
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {

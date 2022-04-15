@@ -84,7 +84,7 @@ class Q : Activity() {
                     val mediaPlayer = MediaPlayer.create(this, resID)
                     mediaPlayer.start()
                 }
-                val randomIntent = Intent(this, A::class.java)
+                val randomIntent = Intent(this, Q::class.java)
                 startActivity(randomIntent)
                 txtOutput.text = ""
 

@@ -84,7 +84,7 @@ class Rr : Activity() { //класс R. уже занят, поэтому Rr
                     val mediaPlayer = MediaPlayer.create(this, resID)
                     mediaPlayer.start()
                 }
-                val randomIntent = Intent(this, A::class.java)
+                val randomIntent = Intent(this, Rr::class.java)
                 startActivity(randomIntent)
                 txtOutput.text = ""
 

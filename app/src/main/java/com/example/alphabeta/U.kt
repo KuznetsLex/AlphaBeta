@@ -75,7 +75,7 @@ class U : Activity() {
             println(lettera)
             counta += 1
             if (txtOutput.text != ""){
-                if ("U" in lettera.substringBefore(',')) {
+                if ("U" in lettera.substringBefore(',')||"u" in lettera.substringBefore(',')) {
                     var resID = getResources().getIdentifier("write_correct", "raw", getPackageName())
                     val mediaPlayer = MediaPlayer.create(this, resID)
                     mediaPlayer.start()
@@ -99,7 +99,7 @@ class U : Activity() {
         //подсказка
         val tip = findViewById<ImageView>(R.id.tip)
         tip.setOnClickListener() {
-            var resID = getResources().getIdentifier("appletree", "raw", getPackageName())
+            var resID = getResources().getIdentifier("u", "raw", getPackageName())
             val mediaPlayer = MediaPlayer.create(this, resID)
             mediaPlayer.start()
         }

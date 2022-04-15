@@ -75,7 +75,7 @@ class Z : Activity() {
             println(lettera)
             counta += 1
             if (txtOutput.text != ""){
-                if ("Z" in lettera.substringBefore(',')) {
+                if ("z" in lettera.substringBefore(',')||"2" in lettera.substringBefore(',')||"Z" in lettera.substringBefore(',')) {
                     var resID = getResources().getIdentifier("write_correct", "raw", getPackageName())
                     val mediaPlayer = MediaPlayer.create(this, resID)
                     mediaPlayer.start()
@@ -99,7 +99,7 @@ class Z : Activity() {
         //подсказка
         val tip = findViewById<ImageView>(R.id.tip)
         tip.setOnClickListener() {
-            var resID = getResources().getIdentifier("appletree", "raw", getPackageName())
+            var resID = getResources().getIdentifier("z", "raw", getPackageName())
             val mediaPlayer = MediaPlayer.create(this, resID)
             mediaPlayer.start()
         }

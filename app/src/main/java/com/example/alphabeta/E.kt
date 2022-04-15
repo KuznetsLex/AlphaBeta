@@ -73,7 +73,7 @@ class E : Activity() {
             println(lettera)
             counta += 1
             if (txtOutput.text != ""){
-                if ("E" in lettera.substringBefore(',')) {
+                if ("E" in lettera.substringBefore(',')||"e" in lettera.substringBefore(',')) {
                     var resID = getResources().getIdentifier("write_correct", "raw", getPackageName())
                     val mediaPlayer = MediaPlayer.create(this, resID)
                     mediaPlayer.start()

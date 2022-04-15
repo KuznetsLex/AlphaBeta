@@ -75,7 +75,7 @@ class Rr : Activity() { //класс R. уже занят, поэтому Rr
             println(lettera)
             counta += 1
             if (txtOutput.text != ""){
-                if ("R" in lettera.substringBefore(',')) {
+                if ("R" in lettera.substringBefore(',')||"r" in lettera.substringBefore(',')) {
                     var resID = getResources().getIdentifier("write_correct", "raw", getPackageName())
                     val mediaPlayer = MediaPlayer.create(this, resID)
                     mediaPlayer.start()
@@ -99,7 +99,7 @@ class Rr : Activity() { //класс R. уже занят, поэтому Rr
         //подсказка
         val tip = findViewById<ImageView>(R.id.tip)
         tip.setOnClickListener() {
-            var resID = getResources().getIdentifier("appletree", "raw", getPackageName())
+            var resID = getResources().getIdentifier("r", "raw", getPackageName())
             val mediaPlayer = MediaPlayer.create(this, resID)
             mediaPlayer.start()
         }

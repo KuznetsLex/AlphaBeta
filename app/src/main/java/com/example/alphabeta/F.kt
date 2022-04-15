@@ -156,12 +156,12 @@ class F : Activity() {
                     val result: ArrayList<String>? = data
                         .getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS)
                     a = result?.get(0).toString()
-                    if ((a == "F") or (a == "f") or (a == "эф")) {
+                    if ((a == "F") or (a == "f") or (a == "эф") or (a == "ф") or (a == "ФФ")) {
                         var resID = getResources().getIdentifier("good", "raw", getPackageName())
                         val mediaPlayer = MediaPlayer.create(this, resID)
                         mediaPlayer.start()
                     } else{
-                        var resID = getResources().getIdentifier("a_again", "raw", getPackageName())
+                        var resID = getResources().getIdentifier("f_again", "raw", getPackageName())
                         val mediaPlayer = MediaPlayer.create(this, resID)
                         mediaPlayer.start()
                     }

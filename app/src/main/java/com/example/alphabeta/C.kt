@@ -168,7 +168,7 @@ class C : Activity() {
                         val mediaPlayer = MediaPlayer.create(this, resID)
                         mediaPlayer.start()
                     } else{
-                        var resID = getResources().getIdentifier("a_again", "raw", getPackageName())
+                        var resID = getResources().getIdentifier("c_again", "raw", getPackageName())
                         val mediaPlayer = MediaPlayer.create(this, resID)
                         mediaPlayer.start()
                     }

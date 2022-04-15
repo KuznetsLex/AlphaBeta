@@ -162,7 +162,7 @@ class Rr : Activity() { //класс R. уже занят, поэтому Rr
                     val result: ArrayList<String>? = data
                         .getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS)
                     a = result?.get(0).toString()
-                    if ((a == "r") or (a == "ар") or (a == "а")) {
+                    if ((a == "R") or (a == "r") or (a == "ар") or (a == "а")) {
                         var resID = getResources().getIdentifier("good", "raw", getPackageName())
                         val mediaPlayer = MediaPlayer.create(this, resID)
                         mediaPlayer.start()

@@ -162,7 +162,7 @@ class Z : Activity() {
                     val result: ArrayList<String>? = data
                         .getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS)
                     a = result?.get(0).toString()
-                    if ((a == "z") or (a == "зед") or (a == "зет") or (a == "зэт") or (a == "зэд")) {
+                    if ((a == "Z") or (a == "z") or (a == "зед") or (a == "зет") or (a == "зэт") or (a == "зэд")) {
                         var resID = getResources().getIdentifier("good", "raw", getPackageName())
                         val mediaPlayer = MediaPlayer.create(this, resID)
                         mediaPlayer.start()

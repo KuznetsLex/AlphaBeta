@@ -162,7 +162,7 @@ class U : Activity() {
                     val result: ArrayList<String>? = data
                         .getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS)
                     a = result?.get(0).toString()
-                    if ((a == "u") or (a == "ю")) {
+                    if ((a == "U") or (a == "u") or (a == "ю")) {
                         var resID = getResources().getIdentifier("good", "raw", getPackageName())
                         val mediaPlayer = MediaPlayer.create(this, resID)
                         mediaPlayer.start()

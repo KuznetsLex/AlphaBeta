@@ -154,7 +154,7 @@ class B : Activity() {
                     val result: ArrayList<String>? = data
                         .getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS)
                     a = result?.get(0).toString()
-                    if ((a == "b") or (a == "be") or (a == "би")) {
+                    if ((a == "B") or (a == "b") or (a == "be") or (a == "би")) {
                         var resID = getResources().getIdentifier("good", "raw", getPackageName())
                         val mediaPlayer = MediaPlayer.create(this, resID)
                         mediaPlayer.start()

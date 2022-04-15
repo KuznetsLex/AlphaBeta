@@ -157,7 +157,7 @@ class E : Activity() {
                     val result: ArrayList<String>? = data
                             .getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS)
                     a = result?.get(0).toString()
-                    if ((a == "e") or (a == "eh") or (a == "и")) {
+                    if ((a == "E") or (a == "e") or (a == "eh") or (a == "и")) {
                         var resID = getResources().getIdentifier("good", "raw", getPackageName())
                         val mediaPlayer = MediaPlayer.create(this, resID)
                         mediaPlayer.start()

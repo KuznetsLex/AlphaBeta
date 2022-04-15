@@ -73,7 +73,7 @@ class G : Activity() {
             println(lettera)
             counta += 1
             if (txtOutput.text != ""){
-                if ("G" in lettera) {
+                if ("G" in lettera.substringBefore(',')) {
                     var resID = getResources().getIdentifier("write_correct", "raw", getPackageName())
                     val mediaPlayer = MediaPlayer.create(this, resID)
                     mediaPlayer.start()
@@ -144,6 +144,8 @@ class G : Activity() {
                     Toast.LENGTH_SHORT).show()
             }
         }
+        val propis=findViewById<ImageView>(R.id.letterai)
+        propis.setImageResource(R.drawable.bukva_g)
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {

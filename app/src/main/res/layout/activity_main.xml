@@ -10,9 +10,9 @@
 
 
     <ImageView android:id="@+id/letterai"
-        android:layout_width="301dp"
-        android:layout_height="485dp"
-        android:src="@drawable/bukva_a"
+        android:layout_width="237dp"
+        android:layout_height="352dp"
+        android:src="@drawable/bukva_b"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -114,7 +114,7 @@
 
     <Switch android:id="@+id/btnChange"
         android:layout_width="85dp"
-        android:layout_height="90dp"
+        android:layout_height="85dp"
         android:background="@drawable/onv1"
         android:checked="true"
         android:thumb="@drawable/space"

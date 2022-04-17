@@ -143,6 +143,14 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".Q">
+            <intent-filter>
+                <action android:name="android.intent.action.Q" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
         <activity android:name=".Rr">
             <intent-filter>
                 <action android:name="android.intent.action.Rr" />

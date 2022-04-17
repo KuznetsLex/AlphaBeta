@@ -72,7 +72,7 @@ class O : Activity() {
             println(lettera)
             counta += 1
             if (txtOutput.text != ""){
-                if ("O" in lettera.substringBefore(',')||"o" in lettera.substringBefore(',')) {
+                if ("O" in lettera.substringBefore(',')||"o" in lettera.substringBefore(',')||"0" in lettera.substringBefore(',')) {
                     var resID = getResources().getIdentifier("write_correct", "raw", getPackageName())
                     val mediaPlayer = MediaPlayer.create(this, resID)
                     mediaPlayer.start()

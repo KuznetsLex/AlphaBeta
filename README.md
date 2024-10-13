@@ -10,3 +10,9 @@ https://github.com/user-attachments/assets/1ff38592-a1b5-4ea6-b15a-6e6f4d5fe5aa
 ## Tools used
 Приложение написано на языке Kotlin при помощи среды разработки Android Studio. При создании интерфейса использовался язык разметки XML.
 Для распознавания произношения и написания использовались готовые нейронные сети и технология машинного обучения Google ML Kit
+
+
+
+
+https://github.com/user-attachments/assets/a2f89ee0-4d62-4ad4-9bf1-fef37611565f
+
